@@ -10,13 +10,25 @@
         }
     </style>
 <body>
-    <H1>Olá Mundo! </H1>
+    <h1>Olá Mundo!</h1>
     <p>Me safei...</p>
+    <p id="nome">Meu nome é, </p>
+    
+    <p id="nome">Seja bem Vindo, </p><!-- O id é usado para manipular o conteúdo pelo JS -->
 
     <script>
-        window.alert('Minha primeira mensagem em JS.')
-        window.confirm('Gostou da minha página?')
-        window.prompt('Qual o seu nome?')
+        // Exibir alertas
+        window.alert('Minha primeira mensagem em JS.');
+        window.confirm('Gostou da minha página?');
+
+        // Coletar o nome do usuário e atualizar o conteúdo no parágrafo
+        var nome = window.prompt('Qual o seu nome?');
+        if (nome) {
+            document.getElementById('nome').innerText = 'Meu nome é: ' + nome;
+        } else {
+            document.getElementById('nome').innerText = 'Meu nome é: Visitante';
+        }
     </script>
 </body>
-</html>  
+
+</html>   

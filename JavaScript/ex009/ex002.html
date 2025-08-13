@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CiDADANIA</title>
+    <style>
+        /* Reset básico */
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 320px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 8px 10px;
+            margin: 10px 0;
+            border: 2px solid #fcb69f;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #ff7e5f;
+        }
+
+        input[type="button"] {
+            background-color: #fcb69f;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-bottom: 10px;
+        }
+
+        input[type="button"]:hover {
+            background-color: #ff7e5f;
+            color: #fff;
+        }
+
+        #res {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        #res strong {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Brasileiro ou Estrangeiro</h1>
+        <input type="text" id="nacio" placeholder="Digite seu País"><br>
+        <input type="button" value="Verificar" onclick="verificar()">
+        <div id="res"></div>
+    </div>
+
+    <script>
+        function verificar(){
+            var nacionalidadeInput = window.document.querySelector('input#nacio');
+            var res = window.document.querySelector('div#res');
+            var nacionalidade = String(nacionalidadeInput.value).trim();
+
+            res.innerHTML = `<p>Coisa boa, seu País é <strong>${nacionalidade}</strong></p>`;
+
+            if (nacionalidade.toLowerCase() === "brasil"){
+                res.innerHTML += `<p>Você é <strong>Brasileiro</strong> do ${nacionalidade}</p>`;
+            } else {
+                res.innerHTML += `<p>Você é <strong>estrangeiro</strong> do País ${nacionalidade}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>

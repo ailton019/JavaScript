@@ -1,0 +1,109 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Container principal */
+section {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Inputs */
+input[type="number"], 
+input[type="radio"], 
+input[type="button"] {
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+/* Botão */
+input[type="button"] {
+    background: #4e54c8;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+input[type="button"]:hover {
+    background: #363b9b;
+}
+
+/* Resultado */
+#res {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    color: #222;
+}
+
+#res img {
+    margin-top: 15px;
+    max-width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Rodapé */
+footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+/* Ajuste do bloco de resultado para não ficar “no meio” */
+#res { 
+  margin-top: 16px; 
+}
+
+#res .resultado {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #f7f7f9;
+  border: 1px solid #e6e6ef;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+#res .texto {
+  line-height: 1.4;
+}
+
+/* A imagem não fica centralizada e ganha um tamanho agradável */
+#res img {
+  max-width: 140px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}

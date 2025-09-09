@@ -19,7 +19,7 @@ function contar() {
     }
 
     if (i < f) {
-      // contagem crescente
+      // contagem crescente b
       for (let c = i; c <= f; c += p) {
         res.innerHTML += `${c} 👉 `;
       }

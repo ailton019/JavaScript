@@ -1,0 +1,1 @@
+console.log('Novo Hello Word, do aquivo JS.')

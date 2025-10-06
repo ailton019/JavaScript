@@ -1,1 +1,7 @@
 Anotações UDEMY JS
+DOM - Document Object Model - serve para atualizar elementos remover intens ou adicionar.
+
+JS - Node JS, React, Angula, Vue. (Front e Back - FullStack).
+
+Este é o HTML, correto.
+Duas modalidades de usar o JS, link externo ou direto no Index HTML.Visualizando, no console do devtools.

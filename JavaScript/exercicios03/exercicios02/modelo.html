@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body >
     <header>
-        <h1>Modelo</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
         <div>
-            modelo
+            <p>Digite um número:</p>
+            <input type="number" name="num" id="txtn">
+            <input type="button" value="Gerar Tabuada" id="txtn" onclick="tabuada()">
+            
+        </div >
+        <div>
+             <select name="tabuada" id="seltab" size = 10 >
+                <option>Digite um número acima.</option>
+             </select>
         </div>
-        <div">
-            resultado 
-        </div>
+        
     </section>
     <footer>
         <p>&copy Desenvolvido por Ailton Rocha</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
